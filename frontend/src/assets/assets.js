@@ -4,6 +4,7 @@ import profile from './profile_icon.png'
 import cart from './cart.png'
 import menu_icon from './menu_icon.png'
 import left_arrow from './left_arrow.png'
+import hero_pic from './hero_pic.jpg'
 
 export const assets = {
     logo,
@@ -11,5 +12,6 @@ export const assets = {
     profile,
     cart,
     menu_icon,
-    left_arrow
+    left_arrow,
+    hero_pic
 }
