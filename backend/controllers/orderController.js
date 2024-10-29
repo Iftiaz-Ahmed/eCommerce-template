@@ -31,7 +31,13 @@ const placeOrderCOD = async (req, res) => {
 
 // Get all orders
 const allOrders = async (req, res) => {
-
+    try {
+        const orders = await orderModel.find({})
+        res.json({success: true, orders})
+    } catch (error) {
+        console.log(error)
+        res.json({success: false, message: error.message})  
+    }
 }
 
 // Get order by userID
@@ -50,7 +56,14 @@ const getOrdersByUserId = async (req, res) => {
 
 // Update order status from Admin panel
 const updateOrderStatus = async (req, res) => {
-
+    try {
+        const { orderId, status } = req.body
+        await orderModel.findByIdAndUpdate(orderId, { status })
+        res.json({success:true, message: "Status Updated"})
+    } catch (error) {
+        console.log(error)
+        res.json({success: false, message: error.message})  
+    }
 }
 
 export {placeOrderCOD, allOrders, getOrdersByUserId, updateOrderStatus}
