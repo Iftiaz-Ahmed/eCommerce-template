@@ -5,6 +5,7 @@ import cart from './cart.png'
 import menu_icon from './menu_icon.png'
 import left_arrow from './left_arrow.png'
 import hero_pic from './hero_pic.jpg'
+import hero_pic2 from './hero_pic2.jpg'
 import cross_icon from './cross_icon.png'
 import star_icon from './star_icon.png'
 import star_dull_icon from './star_dull_icon.png'
@@ -76,6 +77,7 @@ export const assets = {
     menu_icon,
     left_arrow,
     hero_pic,
+    hero_pic2,
     cross_icon,
     star_icon,
     star_dull_icon,
