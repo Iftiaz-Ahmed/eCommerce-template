@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react'
 import NavBar from './components/NavBar'
 import SideBar from './components/SideBar'
 import { Routes, Route} from 'react-router-dom'
-import AddProduct from './pages/addProduct'
-import ListProduct from './pages/listProduct'
-import Orders from './pages/orders'
+import AddProduct from './pages/AddProduct'
+import ListProduct from './pages/ListProduct'
+import Orders from './pages/Orders'
 import Login from './components/Login'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
