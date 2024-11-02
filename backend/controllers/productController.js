@@ -130,6 +130,7 @@ const updateProduct = async (req, res) => {
 
         // Filter out any null values from imagesUrl
         updateData['image'] = imagesUrl.filter(url => url !== null);
+        updateData['sizes'] = JSON.parse(updateData['sizes']);
 
         // Update product in the database
         await productModel.findByIdAndUpdate(productId, updateData, { new: true });
